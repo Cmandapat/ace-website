@@ -115,11 +115,7 @@ function getAttendance(name) {
 		url: "../php/get-attendance.php",
 		data: data,
 		success: function(response) {
-<<<<<<< HEAD
 			document.getElementById("attendance").innerHTML = response + " out of 14";
-=======
-			document.getElementById("attendance").innerHTML = response + " out of 13";
->>>>>>> 5cf25141d6120a7eae221514258476c804840579
 		}
 	});
 }
@@ -245,11 +241,7 @@ function signIn() {
         success: function(response) {
         	console.log(" response: " + response);
         	if (response !== "0")
-<<<<<<< HEAD
      	      	document.getElementById("attendance").innerHTML = response + " out of 14";
-=======
-     	      	document.getElementById("attendance").innerHTML = response + " out of 13";
->>>>>>> 5cf25141d6120a7eae221514258476c804840579
         	else
         		alert("You are not allowed to sign up at this time, contact Max if you believe this is an error");
 

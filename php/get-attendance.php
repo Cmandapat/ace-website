@@ -50,7 +50,7 @@ while ($stmt->fetch())
 
 
 // --------------------------------------------------------------------------------------------
-// Get attendance of the user
+// Get eventids and points of the user's completed events
 // --------------------------------------------------------------------------------------------
 
 if (!($stmt = $conn->prepare("SELECT attendance FROM attendance WHERE uin = ?")))

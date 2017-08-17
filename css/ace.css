@@ -1,13 +1,18 @@
-/* Builds mobile version first, expands to desktop sizes 
- 
+/* Builds mobile version first, expands to desktop sizes
+
  Palette:
   white, ivory, wheat, #600000
 
 /* Basic Elements ---------------------------------------------------------- */
 
+.border {
+   border: 1px solid black;
+}
 body, html {
-  width: 100%;
-  height: 100%;
+  /*width: 100%;*/
+/*  height: 100%;*/
+ overflow-y: scroll;
+ overflow-x:hidden;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -23,7 +28,7 @@ p {
 }
 
 body {
-  padding-top: 30px;
+  padding-top: 50px;
   font-family: 'Roboto Slab';
   background-color: ivory;
 }
@@ -35,7 +40,7 @@ footer {
 h1 hr,
 h2 hr,
 h3 hr,
-h4 hr, 
+h4 hr,
 h5 hr,
 h6 hr {
   color: #600000;             /* IE7+ */
@@ -54,7 +59,7 @@ section {
   h1 {
     font-size: 4em;
   }
-  
+
   p {
     font-size: 1.4em;
   }
@@ -97,3 +102,60 @@ section {
   color: #600000;
   background-color: white;
 }
+/*Recruitment CSS ------------------------------------------------------------*/
+
+  .recruitment-body-text {
+    text-align: center;
+    margin-top: 5%;
+    margin-bottom:5%;
+  }
+  #random {
+
+  width: 100%;
+  background-color: wheat;
+
+  }
+/* Desktops and laptops ----------- */
+@media only screen  and (min-width : 750px) {
+  .slide-container {
+    position: relative;
+    padding-bottom: 35.25%;
+/*    padding-top: 35px;*/
+    height:0;
+    overflow: hidden;
+  }
+
+  .slide-container iframe {
+    position:absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%
+  }
+
+}
+
+
+
+/*MOBILE CSS STARTS HERE ---------------------------------------------------------*/
+
+/*PHONE LANDESCAPE/PORTRAIT*/
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+/* Styles */
+.slide-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  padding-top: 35px;
+  height:0;
+  overflow: hidden;
+}
+
+.slide-container iframe {
+  position:absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+}
+}
+

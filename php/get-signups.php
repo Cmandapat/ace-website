@@ -116,7 +116,7 @@ foreach ($array as $value) {
 				"type" => $row['type'],
 				"points" => $row['points'],			
 				"date" => $row['date'],
-				"freeze" => $row['freeze']
+				"freeze" => $row['freeze'],
 			);
 	}
 }
